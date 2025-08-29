@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+     height: 100vh;
+     box-sizing: border-box;
+      background: linear-gradient(to bottom, #079b3d 0%, #9c2d11 100%); 
+     color: #080808;
+}
+.titulo{
+       font-size: 6.25rem;
+       font-family: system-ui, -apple-system;
+       text-align: center;
+       margin-top: 1.25rem;
+       margin-bottom: 1.25rem;
+    
+}
+.contenido-parrafo{
+    font-size: 1.6875rem;
+    text-align: justify;
+    font-family: "Montserrat", sans-serif;
+}
+.presentacion-main{
+    margin: 2%  15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.presentacion-section{
+    width: 43.75rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+.hypervinculo{
+   display: flex;
+   justify-content: space-between; 
+}
+.link{
+    background-color: rgb(16, 188, 82);
+    width: 17.5rem;
+    border-radius: 1rem;
+    font-family: system-ui, -apple-system;
+    text-decoration: none;
+    margin: 1.25rem;
+    text-align: center;
+}
+.imagen{
+    border-radius: 1rem;
+    box-shadow: 0 0 1.875rem 0.625rem rgba(6, 168, 25, 0.979) ;
+    text-align: center;
+    object-fit: cover;
+}
+.footer{
+    font-size: 1.25rem;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+
+}
+    /* Estilos para el navbar*/
+.navbar {
+    background-color: #120101;
+    overflow: hidden;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.375rem;
+    
+}
+.navbar a {
+    float:left;
+    display: block;
+    color: rgb(213, 238, 238);
+    text-align: center;
+    padding: 0.875rem 1.25rem;
+    text-decoration: none;
+}
+.navbar a:hover {
+    background-color: rgb(18, 178, 56);
+    color: rgb(180, 59, 26);
+}
+.navbar-toggle {
+     display: inline-block;
+     color: bisque;
+     cursor: pointer;
+}
+.sidenav {
+    height: 100%;
+    width: 0; /* Establecer el ancho inicial en 0 */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(206, 47, 15);
+    overflow: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+}
+.sidenav a{
+    padding: 0.625rem 0.9375rem;
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: rgb(12, 197, 31);
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover {
+    background-color: aqua;
+    color: azure;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 1.5625rem;
+    font-size: 2.25rem;
+    margin-left: 3.125rem;
+}
+
+@media (max-width:78.125rem){
+.presentacion-main {
+    flex-direction: column-reverse
+} 
+.presentacion-section{
+    width: auto;
+}
+}
